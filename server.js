@@ -17,13 +17,13 @@ app.get('/', (req, res) => {
     res.render('home', {
         name: 'Edgar',
     });
-})
+});
 
 app.get('/about', (req, res) => {
     res.render('about');
-})
+});
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log(`Listening to port ${ port }`);
 });
